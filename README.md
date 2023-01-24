@@ -1,60 +1,17 @@
-# DotNet-GeoJSON
-It is lightweight GeoJSON creator/convertor class library developed with DotNet 7.
-
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://cihancopur.com/">
+    <img src="https://cihancopur.com/img/logo.svg" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
+  <h3 align="center">DotNet-GeoJSON</h3>
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    It is lightweight GeoJSON creator/convertor class library developed with DotNet 7
   </p>
 </div>
 
-
-
+## :sassy_man: To Request Feature or Contribute [cihancopur.com](https://cihancopur.com/en/) [info@cihancopur.com](https://emailto:info@cihancopur.com/)
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -80,6 +37,29 @@ It is lightweight GeoJSON creator/convertor class library developed with DotNet 
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
+
+## ❓[What Is GeoJSON?](https://www.rfc-editor.org/rfc/rfc7946)
+ℹ️ GeoJSON is a format for encoding a variety of geographic data structures.<br/><br/>
+ℹ️ It is based on JSON (JavaScript Object Notation), a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate.<br/><br/>
+ℹ️ GeoJSON supports the same geometry types as simple features, as defined in the OpenGIS Simple Features for SQL specification, and can be used to represent point, line, and polygon geometries, as well as more complex structures such as MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection.
+
+## ❓ Where To Use GeoJSON?
+ℹ️ GeoJSON is widely used to represent spatial data in web mapping applications, and it is supported by many GIS software, libraries and APIs.<br/><br/>
+ℹ️ It is simple, lightweight and easy to use, it can be easily integrated with other web technologies and data formats, and it is easily extensible, which makes it a popular choice for many developers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -243,7 +223,7 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/copurcihan/DotNet-GeoJSON/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
