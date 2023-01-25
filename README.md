@@ -12,31 +12,6 @@
 </div>
 
 ## :sassy_man: To Request Feature or Contribute [cihancopur.com](https://cihancopur.com/en/) [info@cihancopur.com](https://emailto:info@cihancopur.com/)
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 ## ❓[What Is GeoJSON?](https://www.rfc-editor.org/rfc/rfc7946)
 ℹ️ GeoJSON is a format for encoding a variety of geographic data structures.<br/><br/>
@@ -47,208 +22,369 @@
 ℹ️ GeoJSON is widely used to represent spatial data in web mapping applications, and it is supported by many GIS software, libraries and APIs.<br/><br/>
 ℹ️ It is simple, lightweight and easy to use, it can be easily integrated with other web technologies and data formats, and it is easily extensible, which makes it a popular choice for many developers.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+## ❓ Why Following the GeoJSON Standard is Important?
+ℹ️ GeoJSON is a widely supported format, it's supported by many GIS software and libraries, web mapping APIs, and data visualization tools, which makes it a great option for interoperability and data sharing.<br/><br/>
+ℹ️ Also many web mapping libraries, like leaflet, openlayers and mapbox GL, supports GeoJSON natively and it's easy to integrate into web mapping applications.<br/><br/>
+ℹ️ Additionally, it's also possible to convert other spatial data formats like Shapefile, KML or GPX to GeoJSON.
+
+## ❓ Does GeoJSON Support Styling?
+ℹ️ GeoJSON does not have any in-built styling, if you want to style the features in a GeoJSON file, you have to do it separately, most web mapping libraries have built-in methods for styling GeoJSON data, or you can use third-party libraries like turf.js to manipulate and style the data.
+
+## ❓ Where Can I Store GeoJSON Data?
+There are several options for storing GeoJSON data, depending on your specific use case and requirements. Some popular options include:<br/><br/>
+
+ℹ️ **NoSQL Database:** You can store the GeoJSON data in a NoSQL database, such as MongoDB or Couchbase. This option provides high scalability and performance for handling large amounts of data, and it also allows for flexible schema design and easy integration with other data sources.<br/><br/>
+ℹ️ **File System:** You can simply store the GeoJSON data as a file on your local file system or on a remote server. This is a simple and straightforward option, but it may not be the most efficient or scalable solution for large amounts of data.<br/><br/>
+ℹ️ **Relational Database:** You can store the GeoJSON data in a relational database, such as PostgreSQL with PostGIS extension or MySQL with spatial extension. This option allows you to easily query and update the data, and it also provides support for spatial indexes, which can improve performance when working with large amounts of data.<br/><br/>
+ℹ️ **Cloud-based storage and databases:** You can store the GeoJSON data in cloud-based storage services like Amazon S3 or Google Cloud Storage, and you can use cloud-based databases like Amazon RDS, Google Cloud SQL, MongoDB Atlas, AWS DynamoDB, and many more. This option provides scalability, high availability, and easy integration with other cloud-based services.<br/><br/>
+ℹ️ **Spatial Data Warehouses:** You can store the GeoJSON data in Spatial Data Warehouses like Amazon Redshift, Google BigQuery, Microsoft Azure Synapse Analytics, and many more. This option allows you to store and analyze large amount of data easily, providing tools for spatial analysis, data visualization and reporting.<br/><br/>
+
+Ultimately, the best option for storing GeoJSON data will depend on the specific requirements of your use case, including the size and complexity of the data, the required performance and scalability, and the available resources and budget.
+
+## ❓ What Are The Geometry Types?
+In GeoJSON, the "geometry" field describes the shape of a feature, and it must contain a "type" field that specifies the type of geometry. The following are the different types of geometry that can be used in GeoJSON:
+
+### 1. Point
+- A single point in space represented by a set of coordinates (longitude, latitude).
+- ✔️ Supported By DotNet-GeoJSON<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/SFA_Point.svg/102px-SFA_Point.svg.png)
+
+**[You can copy & past example GeoJSONs to see outputs on the map: GeoJSON.io][geojson-io]**
+- Here is an example of a simple GeoJSON file that represents a point location of the Empire State Building in New York City:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9857, 40.7484]
+    },
+    "properties": {
+        "name": "Empire State Building",
+        "address": "350 5th Ave, New York, NY 10118"
+    }
+}
+```
+- You can use the following code block to create the above GeoJSON output in your code;
+```
+var geoJson = new GeoJSON();
+
+var properties = new { name = "Empire State Building", address = "address", };
+
+var geometry = new Point(-73.9857, 40.7484);
+
+geoJson.features.Add(new Feature(geometry, properties));
+
+if (geoJson.IsValid())
+  return geoJson.GetAsFeature();
+
+return null;
+```
+- **A GeoJSON** object with the type **"FeatureCollection"** is a **FeatureCollection** object. A **FeatureCollection** object has a member with the name **"features"**. The value of **"features"** is a JSON array. Each element of the array is a **Feature** object as defined above. It is possible for this array to be empty.**
+```
+var geoJson = new GeoJSON();
+
+var properties = new { name = "Empire State Building", address = "address", };
+
+var geometry = new Point(-73.9857, 40.7484);
+
+geoJson.features.Add(new Feature(geometry, properties));
+
+if (geoJson.IsValid())
+  return geoJson; //This is the only line different from the code block above.
+
+return null;
+```
+
+
+### 2. MultiPoint
+- An array of multiple Point objects.
+- ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/SFA_MultiPoint.svg/102px-SFA_MultiPoint.svg.png)
+- Here is an example of a GeoJSON file that represents a MultiPoint feature with three points:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+            [-73.9857, 40.7484],
+            [-118.2437, 34.0522],
+            [-87.6298, 41.8781]
+        ]
+    },
+    "properties": {
+        "name": "Three Cities",
+        "city1": "New York",
+        "city2": "Los Angeles",
+        "city3": "Chicago"
+    }
+}
+```
+- In this example, the MultiPoint feature represents three cities, New York, Los Angeles and Chicago, each represented by a set of coordinates (longitude, latitude). The "coordinates" field of the "geometry" object contains an array of multiple sets of coordinates, one for each point. The "properties" field can contain any additional information about the feature, in this case the name of the cities.
+
+### 3. LineString
+- A line connecting two or more points represented by an array of coordinates.
+- ✔️ Supported By DotNet-GeoJSON<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/SFA_LineString.svg/102px-SFA_LineString.svg.png)
+- Here is an example of a GeoJSON file that represents a LineString feature that connects two points:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [-73.9857, 40.7484],
+            [-118.2437, 34.0522]
+        ]
+    },
+    "properties": {
+        "name": "Route from New York to Los Angeles",
+        "distance": "3000 km"
+    }
+}
+```
+- In this example, the LineString feature represents a route from New York to Los Angeles, and it is defined by an array of coordinates (longitude, latitude). The "coordinates" field of the "geometry" object contains an array of multiple sets of coordinates, one for each point in the line. The "properties" field can contain any additional information about the feature, in this case the name of the route and the distance.
+- You can use the following code block to create the above GeoJSON output in your code;
+```
+var geoJson = new GeoJSON();
+
+var properties = new { name = "Route from New York to Los Angeles", distance = "3000 km" };
+
+var points = new List<Point>();
+points.Add(new Point(-73.9857, 40.7484));
+points.Add(new Point(-118.243, 34.0522));
+
+var geometry = new LineStrings(points);
+
+geoJson.features.Add(new Feature(geometry, properties));
+
+if (geoJson.IsValid())
+  return geoJson.GetAsFeature();
+
+return null;
+```
+You can also have a more complex LineString with multiple segments:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [-73.9857, 40.7484],
+            [-118.2437, 34.0522],
+            [-87.6298, 41.8781]
+        ]
+    },
+    "properties": {
+        "name": "Route from New York to Los Angeles to Chicago",
+        "distance": "4000 km"
+    }
+}
+```
+- In this example, the LineString feature represents a route from New York to Los Angeles to Chicago, and it is defined by an array of coordinates (longitude, latitude). The "coordinates" field of the "geometry" object contains an array of multiple sets of coordinates, one for each point in the line, in this case three points that represents the three cities. The "properties" field can contain any additional information about the feature, in this case the name of the route and the distance.
+### 4. MultiLineString
+- An array of multiple LineString objects.
+- ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/SFA_MultiLineString.svg/102px-SFA_MultiLineString.svg.png)
+- Here is an example of a GeoJSON file that represents a MultiLineString feature with two LineString objects:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+            [
+                [-73.9857, 40.7484],
+                [-118.2437, 34.0522]
+            ],
+            [
+                [-87.6298, 41.8781],
+                [-118.2437, 34.0522]
+            ]
+        ]
+    },
+    "properties": {
+        "name": "Routes from East Coast to West Coast",
+        "distance": "4000 km"
+    }
+}
+```
+- In this example, the MultiLineString feature represents two routes from the East Coast to the West Coast, one from New York to Los Angeles and another one from Chicago to Los Angeles. Both routes are defined by an array of coordinates (longitude, latitude). The "coordinates" field of the "geometry" object contains an array of multiple arrays of coordinates, one for each line. The "properties" field can contain any additional information about the feature, in this case the name of the route and the distance.
+
+- You can also have more complex MultiLineString where each linestring connects multiple points, in this case the coordinates field will be an array of arrays where each array represents a linestring with multiple coordinates.
+
+### 5. Polygon
+- A closed shape defined by an array of coordinates. The first and last coordinates must be the same to close the shape.
+- ✔️ Supported By DotNet-GeoJSON<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/SFA_Polygon.svg/102px-SFA_Polygon.svg.png)
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/SFA_Polygon_with_hole.svg/102px-SFA_Polygon_with_hole.svg.png)
+- Here is an example of a GeoJSON file that represents a Polygon feature that defines the shape of a park:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-73.9726, 40.7896],
+                [-73.9331, 40.7935],
+                [-73.9287, 40.7696],
+                [-73.9686, 40.7660],
+                [-73.9726, 40.7896]
+            ]
+        ]
+    },
+    "properties": {
+        "name": "Central Park",
+        "area": "341 ha"
+    }
+}
+```
+- In this example, the Polygon feature represents the shape of Central Park, and it is defined by an array of coordinates (longitude, latitude). The "coordinates" field of the "geometry" object contains an array of multiple sets of coordinates, one for each point that defines the shape of the park. The order of the coordinates is important and they should be arranged in a clockwise or counterclockwise direction, in this case the last point is the same as the first one in order to close the shape. The "properties" field can contain any additional information about the feature, in this case the name of the park and its area.
+
+- You can also have a polygon with an inner ring, called Hole, that is defined by a different set of coordinates and it will be represented as another array of coordinates within the coordinates field.
+
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-73.9726, 40.7896],
+                [-73.9331, 40.7935],
+                [-73.9287, 40.7696],
+                [-73.9686, 40.7660],
+                [-73.9726, 40.7896]
+            ],
+            [
+                [-73.9648, 40.7740],
+                [-73.9555, 40.7772],
+                [-73.9535, 40.7712],
+                [-73.9628, 40.7683],
+                [-73.9648, 40.7740]
+            ]
+        ]
+    },
+    "properties": {
+        "name": "Central Park",
+        "area": "341 ha"
+    }
+}
+```
+- In this example, the Polygon feature represents the shape of Central Park, which includes an inner ring, that is a hole, that is defined by a different set of coordinates. The hole is defined by an array of coordinates within the coordinates field of the polygon.
+- You can use the following code block to create the above GeoJSON output in your code;
+```
+var geoJson = new GeoJSON();
+
+var properties = new { name = "Central Park", area = "341 ha" };
+
+//Outer Ring
+var points = new List<Point>();
+points.Add(new Point(-73.9726, 40.7896));
+points.Add(new Point(-73.9331, 40.7935));
+points.Add(new Point(-73.9287, 40.7696));
+points.Add(new Point(-73.9686, 40.7660));
+points.Add(new Point(-73.9726, 40.7896));
+
+var lineString = new LineStrings(points);
+
+var geometry = new Polygon(lineString);
+
+//Inner Ring
+points = new List<Point>();
+points.Add(new Point(-73.9648, 40.7740));
+points.Add(new Point(-73.9555, 40.7772));
+points.Add(new Point(-73.9535, 40.7712));
+points.Add(new Point(-73.9628, 40.7683));
+points.Add(new Point(-73.9648, 40.7740));
+
+lineString = new LineStrings(points);
+
+geometry.AddLinearRing(lineString);
+
+geoJson.features.Add(new Feature(geometry, properties));
+
+if (geoJson.IsValid())
+  return geoJson.GetAsFeature();
+
+return null;
+```
+
+### 6. MultiPolygon
+- An array of multiple Polygon objects.
+- ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/SFA_MultiPolygon.svg/102px-SFA_MultiPolygon.svg.png)
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/SFA_MultiPolygon_with_hole.svg/102px-SFA_MultiPolygon_with_hole.svg.png)
+- Here's an example of a GeoJSON Feature that contains a MultiPolygon geometry:
+```
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": 
+        [
+             [
+                [
+                    [-117.3325, 32.6354],
+                    [-117.3325, 32.5354],
+                    [-117.2325, 32.5354],
+                    [-117.2325, 32.6354],
+                    [-117.3325, 32.6354]
+                ]
+            ],
+            [      
+                [
+                    [-118.3325, 33.6354],
+                    [-118.3325, 33.5354],
+                    [-118.2325, 33.5354],
+                    [-118.2325, 33.6354],
+                    [-118.3325, 33.6354]
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "name": "MultiPolygon Example"
+    }
+}
+```
+- In this example, the MultiPolygon geometry is made up of two polygons. The first polygon is represented by the first set of coordinates and the second polygon is represented by the second set of coordinates.
+- Each set of coordinates is enclosed in a nested array, with the outermost array representing the entire MultiPolygon geometry.
+
+### 7. GeometryCollection
+- A collection of different types of geometries.
+- ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
+![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/SFA_GeometryCollection.svg/102px-SFA_GeometryCollection.svg.png)
+- Here's an example of a GeoJSON Feature that contains a GeometryCollection geometry:
+```
+{
+    "type": "GeometryCollection",
+    "geometries": [
+        {
+            "type": "Point",
+            "coordinates": [40.0, 10.0]
+        },
+        {
+            "type": "LineString",
+            "coordinates": [
+                [10.0, 10.0], [20.0, 20.0], [10.0, 40.0]
+            ]
+        },
+        {
+            "type": "Polygon",
+            "coordinates": [
+                [[40.0, 40.0], [20.0, 45.0], [45.0, 30.0], [40.0, 40.0]]
+            ]
+        }
+    ]
+}
+```
+- In this example, the GeometryCollection geometry is made up of three different geometries: a Point, a LineString, and a Polygon. Each of these geometries is represented by a separate object within the "geometries" array.
+- A GeometryCollection is a GeoJSON object that can contain multiple other geometry objects of different types, making it a powerful way to represent complex geometries.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/copurcihan/DotNet-GeoJSON/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[geojson-io]: https://geojson.io/
+
 
