@@ -512,7 +512,7 @@ Don't forget to give the project a star! Thanks again!
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Useful Links
-- You can find the useful links regarding GeoJSON
+You can find the useful links regarding GeoJSON
 
 * [The GeoJSON Format][rfc-page]
 * [geojson.io Free GeoJSON Viewer][geojson-io]
