@@ -516,6 +516,12 @@ You can find the useful links regarding GeoJSON
 
 * [The GeoJSON Format][rfc-page]
 * [geojson.io Free GeoJSON Viewer][geojson-io]
+
+## Changelog
+
+| Version | Date | Changes |
+| ------- | ---- | ------ |
+| v1.0.0  | Jan 26, 2023 | - First version is ready.|
   
 
 <!-- MARKDOWN LINKS & IMAGES -->
