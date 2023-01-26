@@ -13,7 +13,7 @@
 
 ## :sassy_man: To Request Feature or Contribute [cihancopur.com](https://cihancopur.com/en/) [info@cihancopur.com](https://emailto:info@cihancopur.com/)
 
-## ❓[What Is GeoJSON?](https://www.rfc-editor.org/rfc/rfc7946)
+## ❓[What Is GeoJSON?][rfc-page]
 ℹ️ GeoJSON is a format for encoding a variety of geographic data structures.<br/><br/>
 ℹ️ It is based on JSON (JavaScript Object Notation), a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate.<br/><br/>
 ℹ️ GeoJSON supports the same geometry types as simple features, as defined in the OpenGIS Simple Features for SQL specification, and can be used to represent point, line, and polygon geometries, as well as more complex structures such as MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection.
@@ -94,7 +94,15 @@ if (geoJson.IsValid())
 
 return null;
 ```
-
+#### Point GeoJSON Validation
+- Each Point must have at least 2 double values in the List<double> coordinates property.
+  
+```
+public override bool IsValid()
+{
+  return coordinates.Count >= 2;
+}
+```
 
 ### 2. MultiPoint
 - An array of multiple Point objects.
@@ -182,6 +190,19 @@ You can also have a more complex LineString with multiple segments:
 }
 ```
 - In this example, the LineString feature represents a route from New York to Los Angeles to Chicago, and it is defined by an array of coordinates (longitude, latitude). The "coordinates" field of the "geometry" object contains an array of multiple sets of coordinates, one for each point in the line, in this case three points that represents the three cities. The "properties" field can contain any additional information about the feature, in this case the name of the route and the distance.
+
+#### LineString GeoJSON Validation
+- For type "LineString", the "coordinates" member is an array of two or more positions.
+  
+```
+public override bool IsValid()
+{
+  if (coordinates.Count >= 2)
+    return coordinates.All(t => t.Count >= 2);
+  return false;
+}
+```
+  
 ### 4. MultiLineString
 - An array of multiple LineString objects.
 - ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
@@ -310,10 +331,44 @@ if (geoJson.IsValid())
 
 return null;
 ```
+#### Polygon GeoJSON Validation
+- To specify a constraint specific to Polygons, it is useful to introduce the concept of a linear ring:
 
+   o  A linear ring is a closed LineString with four or more positions.
+
+   o  The first and last positions are equivalent, and they MUST contain
+      identical values; their representation SHOULD also be identical.
+
+   o  A linear ring is the boundary of a surface or the boundary of a
+      hole in a surface.
+
+   o  A linear ring MUST follow the right-hand rule with respect to the
+      area it bounds, i.e., exterior rings are counterclockwise, and
+      holes are clockwise.
+  
+   o  For type "Polygon", the "coordinates" member MUST be an array of
+      linear ring coordinate arrays.
+
+   o  For Polygons with more than one of these rings, the first MUST be
+      the exterior ring, and any others MUST be interior rings.  The
+      exterior ring bounds the surface, and the interior rings (if
+      present) bound holes within the surface.
+  
+```
+public override bool IsValid()
+{
+  if (coordinates.Count < 1 || !coordinates.All(t => t.Count >= 3)) return false;
+  {
+    if (coordinates.All(t1 => t1.All(t => t.Count == 2)))
+      return coordinates.All(t => t[0][0] == t[t.Count - 1][0] && t[0][1] == t[t.Count - 1][1]);
+
+     return true;
+   }
+}
+```
 ### 6. MultiPolygon
 - An array of multiple Polygon objects.
-- ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
+- ✔️ Supported By DotNet-GeoJSON<br/><br/>
 ![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/SFA_MultiPolygon.svg/102px-SFA_MultiPolygon.svg.png)
 ![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/SFA_MultiPolygon_with_hole.svg/102px-SFA_MultiPolygon_with_hole.svg.png)
 - Here's an example of a GeoJSON Feature that contains a MultiPolygon geometry:
@@ -351,7 +406,63 @@ return null;
 ```
 - In this example, the MultiPolygon geometry is made up of two polygons. The first polygon is represented by the first set of coordinates and the second polygon is represented by the second set of coordinates.
 - Each set of coordinates is enclosed in a nested array, with the outermost array representing the entire MultiPolygon geometry.
+- You can use the following code block to create the above GeoJSON output in your code;
+```
+var geoJson = new GeoJSON();
 
+var properties = new { name = "MultiPolygon Example"};
+
+//First Polygon
+var points = new List<Point>();
+points.Add(new Point(-117.3325, 32.6354));
+points.Add(new Point(-117.3325, 32.5354));
+points.Add(new Point(-117.2325, 32.5354));
+points.Add(new Point(-117.2325, 32.6354));
+points.Add(new Point(-117.3325, 32.6354));
+
+var polygon = new Polygon(new LineStrings(points));
+
+//Initialize MultiPolygon With At Least One Polygon
+var geometry = new MultiPolygon(polygon);
+
+//Second Polygon
+points = new List<Point>();
+points.Add(new Point(-118.3325, 33.6354));
+points.Add(new Point(-118.3325, 33.5354));
+points.Add(new Point(-118.2325, 33.5354));
+points.Add(new Point(-118.2325, 33.6354));
+points.Add(new Point(-118.3325, 33.6354));
+
+//Add second and many more polygons to your MultiPolygon
+polygon = new Polygon(new LineStrings(points));
+
+geometry.AddPolygon(polygon);
+
+geoJson.features.Add(new Feature(geometry, properties));
+
+if (geoJson.IsValid())
+  return geoJson.GetAsFeature();
+
+return null;
+```
+#### MultiPolygon GeoJSON Validation
+- For type "MultiPolygon", the "coordinates" member is an array of Polygon coordinate arrays.
+```
+public override bool IsValid()
+{
+  if (coordinates.Count >= 1 && coordinates.All(t => t.Count >= 1) &&
+      coordinates.All(t1 => t1.All(t => t.Count >= 3)))
+      if (coordinates.All(t2 => t2.All(t1 => t1.All(t => t.Count == 2))))
+      {
+          foreach (var t in coordinates)
+            if (t.Any(t1 => t1[0][0] != t1[t.Count - 1][0] || t1[0][1] != t1[t.Count - 1][1]))
+                return false;
+            return true;
+       }
+
+       return false;
+}
+```
 ### 7. GeometryCollection
 - A collection of different types of geometries.
 - ✖️ Not Supported By DotNet-GeoJSON (Coming Soon)<br/><br/>
@@ -383,8 +494,39 @@ return null;
 - In this example, the GeometryCollection geometry is made up of three different geometries: a Point, a LineString, and a Polygon. Each of these geometries is represented by a separate object within the "geometries" array.
 - A GeometryCollection is a GeoJSON object that can contain multiple other geometry objects of different types, making it a powerful way to represent complex geometries.
 
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+## Useful Links
+- You can find the useful links regarding GeoJSON
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+  
+  
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [geojson-io]: https://geojson.io/
+[rfc-page] : https://www.rfc-editor.org/rfc/rfc7946  
 
 
