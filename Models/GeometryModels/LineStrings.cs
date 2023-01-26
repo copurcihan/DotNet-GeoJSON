@@ -17,7 +17,7 @@ public class LineStrings : Geometry
     public override bool IsValid()
     {
         if (coordinates.Count >= 2)
-            return coordinates.All(t => t.Count == 2);
+            return coordinates.All(t => t.Count >= 2);
         return false;
     }
 }

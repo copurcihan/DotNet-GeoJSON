@@ -22,3 +22,15 @@
 /Users/cihan.copur/Desktop/GitHub-Personal/DotNetGeoJSON/obj/Debug/net7.0/refint/DotNetGeoJSON.dll
 /Users/cihan.copur/Desktop/GitHub-Personal/DotNetGeoJSON/obj/Debug/net7.0/DotNetGeoJSON.pdb
 /Users/cihan.copur/Desktop/GitHub-Personal/DotNetGeoJSON/obj/Debug/net7.0/ref/DotNetGeoJSON.dll
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/bin/Debug/net7.0/DotNetGeoJSON.deps.json
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/bin/Debug/net7.0/DotNetGeoJSON.dll
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/bin/Debug/net7.0/DotNetGeoJSON.pdb
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.csproj.AssemblyReference.cache
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.AssemblyInfoInputs.cache
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.AssemblyInfo.cs
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.csproj.CoreCompileInputs.cache
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.dll
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/refint/DotNetGeoJSON.dll
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/DotNetGeoJSON.pdb
+/Users/cihan.copur/Desktop/GitHub-Personal/DotNet-GeoJSON/obj/Debug/net7.0/ref/DotNetGeoJSON.dll

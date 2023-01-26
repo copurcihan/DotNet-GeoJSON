@@ -13,6 +13,6 @@ public class Point : Geometry
 
     public override bool IsValid()
     {
-        return coordinates.Count == 2;
+        return coordinates.Count >= 2;
     }
 }

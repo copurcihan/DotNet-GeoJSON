@@ -18,7 +18,7 @@ public class Polygon : Geometry
     {
         if (coordinates.Count < 1 || !coordinates.All(t => t.Count >= 3)) return false;
         {
-            if (coordinates.All(t1 => t1.All(t => t.Count == 2)))
+            if (coordinates.All(t1 => t1.All(t => t.Count >= 2)))
                 return coordinates.All(t => t[0][0] == t[t.Count - 1][0] && t[0][1] == t[t.Count - 1][1]);
 
             return true;

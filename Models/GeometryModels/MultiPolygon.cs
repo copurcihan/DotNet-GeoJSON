@@ -18,7 +18,7 @@ public class MultiPolygon : Geometry
     {
         if (coordinates.Count >= 1 && coordinates.All(t => t.Count >= 1) &&
             coordinates.All(t1 => t1.All(t => t.Count >= 3)))
-            if (coordinates.All(t2 => t2.All(t1 => t1.All(t => t.Count == 2))))
+            if (coordinates.All(t2 => t2.All(t1 => t1.All(t => t.Count >= 2))))
             {
                 foreach (var t in coordinates)
                     if (t.Any(t1 => t1[0][0] != t1[t.Count - 1][0] ||
